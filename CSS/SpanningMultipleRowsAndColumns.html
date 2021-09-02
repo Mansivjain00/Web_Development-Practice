@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning Multiple Rows and Columns in Grid</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-template-rows: repeat(4,2fr);
+            /* grid-column-gap: 2rem;
+            grid-row-gap: 3rem; */
+
+            grid-gap: 3rem;
+        }
+        .box{
+            color: white;
+            background-color: rosybrown;
+            border: 2px solid grey;
+            padding: 23px;
+        }
+
+
+        /* lets say we want to merger item 1,2,6 and 7 */
+        .box:first-child{
+            /* ends before column 3 */
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* shorthand for the above four commands */
+            /* to span two columns and rows */
+            grid-column: 1/ span 2;
+            grid-row: 1/ span 2;
+        }
+
+        /* now what should we use? Float, Flexbox, and Grid? */
+        /* Use Whatever is comfortable! */
+        /* As long as your user server and you are okay with it, use anything */
+        /* User experience is very important */
+        /* For SEO, you could use grid */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+        <div class="box">item-11</div>
+        <div class="box">item-12</div>
+    </div>
+</body>
+</html>

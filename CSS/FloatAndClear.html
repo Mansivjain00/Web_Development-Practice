@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <style>
+        *{}
+        .container{
+            width: 900px;
+            border: 10px groove grey;
+            /* margin: auto; to centralize */
+            margin: 50px auto ;
+            font-family: 'Zen Loop', cursive;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .item{
+            color: whitesmoke;
+            background-color: rosybrown;
+            border: 10px double black;
+            margin:10px 5px;
+            padding:10px 5px;
+        }
+
+        #fruits{
+            float: left;
+           width: 48%;
+        }
+        #computers{
+            float: left;
+            width: 40%;
+        }
+        #stationery{
+            /* float: left; */
+            width: 90%;
+            /* if we comment out float and clear: right,it remains the same,but if we do clear:left,it becomes fine, how? */
+            /* clear:left, means float left elements should not trouble me, clear right:float right elements should not trouble me,therefore since fruits and containers computers are left floated, when we do clear left, they dont trouble stationery */
+            /* clear: both, to stop both elements from troubling */
+            clear: left;
+        }
+        p{
+            text-align: justify;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id=fruitsPara class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius exercitationem tenetur animi, incidunt laborum praesentium? Natus autem laboriosam eveniet!</p>
+        </div>
+        <div id="computers" class="item">
+            <h3>Computers</h3>
+            <p id=computersPara class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius exercitationem tenetur animi, incidunt laborum praesentium? Natus autem laboriosam eveniet!</p>
+    </div>
+        <div id="stationery" class="item">
+            <h3>Stationery</h3>
+            <p id=stationeryPara class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius exercitationem tenetur animi, incidunt laborum praesentium? Natus autem laboriosam eveniet!</p>
+        </div>
+    </div>
+</body>
+</html>

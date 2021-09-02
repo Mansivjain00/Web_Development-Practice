@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            color: white;
+            background-color: rosybrown;
+            /* border in between margin and padding */
+            border:3px solid black;
+            /* padding before border,space inside border */
+            padding: 10px;
+            /* margin after border,space outside border */
+            margin: 34px;
+            /* padding and margin can be explicitly given for each side,i.e top,bottom,left,right */
+            border-radius: 10px;
+            width: 500px;
+        }
+        
+        .container2{
+            color: white;
+            background-color: rosybrown;
+            border:3px solid black;
+            
+            /* we can set padding/margin for top,bottom,left and right like this */
+            /* padding/margin: top right bottom left; */
+            
+            padding: 20px 5px 20px 15px;
+            
+            /* padding/margin: y(top/bottom) x(right/left) */
+            
+            margin: 34px 17px;
+            border-radius: 10px;
+            width: 500px;
+            /* normally if you increase padding/margin width increases,you can prevent that through box sizing */
+            /* this will adjust the width according to padding/margin */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- Refer image below for better understanding of css box model -->
+    <h4>Box Model Image</h4>
+    <img src="css_box_model_chrome.png" alt="Error Loading Image">
+    <div class="container">
+        <h3>Box Model</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam temporibus mollitia facilis soluta beatae explicabo consequuntur cum iure dolor autem. Inventore corrupti vitae odio illo dolorum est quos perferendis reiciendis!</p>
+    </div>
+    <div class="container">
+        <h3>Box Model</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam temporibus mollitia facilis soluta beatae explicabo consequuntur cum iure dolor autem. Inventore corrupti vitae odio illo dolorum est quos perferendis reiciendis!</p>
+    </div>
+    <div class="container2">
+        <h3>Box Model</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam temporibus mollitia facilis soluta beatae explicabo consequuntur cum iure dolor autem. Inventore corrupti vitae odio illo dolorum est quos perferendis reiciendis!</p>
+    </div>
+
+    
+</body>
+</html>

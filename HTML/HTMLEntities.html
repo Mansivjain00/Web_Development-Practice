@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+    <!-- What are HTML Entities?
+    HTML Entities help in printing the reserved characters, special characters, or characters that are not present in the keyboard -->
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+    <div class="container">
+        <!-- HTML ignores the extra spaces, to be able to print those extra spaces you have to use HTML entities -->
+        <!-- &nbsp; Non breaking space(Not Recommended) -->
+        <p>This is another &nbsp;&nbsp;&nbsp; paragraph with three spaces</p>
+        <!-- We want <p> to be displayed too -->
+        <p>There goes another paragraph<p></p>
+        <!-- How to fix the above issue -->
+        <!-- &lt;Less than, &gt;Greater than -->
+        <p>This is a paragraph tag &lt;p&gt;</p>
+        <p>Pound is written like this &pound;</p>
+        <p>Copyright is written like this &copy;</p>
+        <p>Empty character is written like this &#8203;</p>
+        <!-- Apart from these if you cannot find a particular symbol, look up on the internet, you'll find its syntax -->
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h3{
+            color: whitesmoke;
+        }
+        #box{
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            background-color: rosybrown;
+            color: white;
+            align-items: center;
+            /* transition for  background is taking 2s */
+            /* transition-property: background-color;
+            transition-duration: 3s; */
+
+            /* slow in the beginning */
+            /* transition-timing-function: ease-in; */
+
+            /* transition-delay: 3s; */
+
+            /* transition: property transition_duration transition-timing-function transition_delay; */
+            /* transition shorthand */
+            transition: background-color 3s ease-in 0.3s;
+            
+            /* if you want all the properties to transition */
+            transition: all 3s ease-in 0.3s;
+
+            /* which properties can be transitioned? */
+            /* properties  that have continuos values */
+            /* like colors, height, width,opacity, margin */
+        }
+
+        #box:hover{
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>CSS Transitions</h3>
+    <div class="container">
+        <div id="box">This is My Box</div>
+    </div>
+</body>
+</html>

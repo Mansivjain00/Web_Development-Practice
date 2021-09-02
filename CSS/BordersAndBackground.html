@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and backgrounds</title>
+    <style>
+        #firstPara{
+            color: whitesmoke;
+            background-color: rosybrown;
+            /* Height and width defines the size of the box that contains the first para */
+            height: 100px;
+            width: 500px;
+            border-width: 10px;
+            border: black;
+            border-style: solid;
+            /* if you want rounded corners, give border radius */
+            border-radius: 13px;
+        }
+
+        #secondPara{
+            color: whitesmoke;
+            background-color: black;
+            height: 100px;
+            width: 500px;
+            /* border that we gave in the first para is too much work */
+            border: 10px double white;
+        }
+
+        #thirdPara{
+            color: whitesmoke;
+            background-color: grey;
+            height: 100px;
+            width: 500px;
+            /* borders for left and right */
+            border-left: 10px groove green;
+            border-right: 10px groove rgb(73, 73, 179);
+            /* to get rounded borders on left and right */
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+        }
+        
+        #fourthPara{
+            color: whitesmoke;
+            background-color: rgb(73, 73, 179);
+            height: 100px;
+            width: 500px;
+            /* borders for top and bottom */
+            border-top: 10px solid black;
+            border-bottom: 10px groove black;
+            /* to get rounded borders on top and bottom */
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 13px;
+        }
+
+        #fifthPara{
+            height: 700px;
+            width: 500px;
+            /* background image could repeat */
+            background-image: url(background.jpg);
+
+            /* you can remove background repeat for x and y axis */
+            background-repeat: no-repeat;
+
+            /* repeat-x/repeat-y will make it repeat in x and y axis */
+
+            /* background-position:position in x,position in y;(values can be in px or "center,top,etc") */
+            background-position: center center ;
+        }
+    </style>
+</head>
+<body>
+    <h3>Borders And backgrounds</h3>
+    <p id="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eum.</p>
+    <p id="secondPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eum.</p>
+    <p id="thirdPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eum.</p>
+    <p id="fourthPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eum.</p>
+    <p id="fifthPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, adipisci!</p>
+</body>
+</html>

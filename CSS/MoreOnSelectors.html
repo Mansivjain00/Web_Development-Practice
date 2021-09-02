@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color: rosybrown;
+        }
+
+        /* Property on all paragraphs in div */
+        div p{
+            color: white;
+            background-color: black;
+        }
+
+        div li p{
+            background-color: brown;
+            color: white;
+        }
+
+        /* to follow a particular heirarchy,like div's direct p's */
+        /* first child id p */
+
+        div >p{
+            background-color: cadetblue;
+            color: white;
+        }
+
+        /* css on an element whose previous element is span */
+
+        /* siblings, div is the previous sibling of span */
+        div+span{
+            color: white;
+            background-color: green;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>More On Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"> <p>One(li)</p> </li>
+                <p>This is a para inside ul, which is not direct so "div>p" will not effect here  </p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <span>This is a span<p>This is another paragraph</p></span>
+    </div>
+    <p>This is the outermost paragraph</p>
+</body>
+</html>

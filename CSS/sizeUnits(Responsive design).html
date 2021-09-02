@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units that help in making a responsive website</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 10px;
+            /* You want the height to fit the whole page,but increasing pixels like this is inconvinent */
+            height: 1000px;
+            /* vh(viewport height):100vh takes the height of the screen */
+            height: 100vh;
+            width: 500px;
+            /* vh(viewport width):100vw takes the width of the screen */
+            /* vh and vw are kind of percentages */
+            width: 100vw;
+            border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        /* search for a comprehensive guide for when to use rem and em */
+
+        #first{
+            /* em:10 times the font-size of the parent */
+            /* therefore 3em= 3 times of 10px here  */
+            font-size: 3em;
+
+            /* Here three em means three em of the font size that you've over written */
+            /* therefore 3em= 3 times of (3*10) here */
+            padding: 3em;
+
+            /* You  should use em when you want the children to resize as soon as their parents resizes */
+        }
+
+        #second{
+            /* relative to html -root element- changes accordingly */
+            font-size: 3rem;
+            padding: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first"> First Heading</h1>
+        <h1 id="second"> Second Heading</h1>
+        <h1 id="third"> Third Heading</h1>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        .navBar{
+            color: whitesmoke;
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .navBar ul{
+            /* To avoid overflow */
+            overflow: auto;
+        }
+
+        .navBar li{
+            /* You wont be able to see background now, because when you float something, it overflows from parent */
+            float: left;
+            list-style: none;
+            margin: 20px 20px;
+        }
+
+        .navBar li a{
+            color:whitesmoke;
+            padding: 3px;
+            text-decoration: none;
+        }
+        .navBar li a:hover{
+            color: grey;
+        }
+
+        .searchBox input{
+            color: whitesmoke;
+            float: right;
+            padding: 3px;
+            margin: 20px 20px;
+            border-radius: 40px;
+            background-color: transparent;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Document</a></li>
+                <div class="searchBox">
+                    <input type="text" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid black; */
+            background-color: rosybrown;
+            color: white;
+            /* shadow in x, shadow in y and color */
+            /* if you want shadow below give positive values */
+            box-shadow: 10px 13px grey;
+
+            /* if you want the shadow on top give negative values */
+            box-shadow: -10px -13px grey;
+
+            /* shadow in x, shadow in y ,blur radius and color */
+            /* blur radius decides how much the color should be spread,for shiny you can try */
+            box-shadow: 7px 5px 10px grey;
+
+            /* shadow in x, shadow in y ,blur radius, spread radius and color */
+            /* to spread in all directions*/
+            box-shadow: 10px 13px 10px 14px rgba(175, 174, 174, 0.986);
+
+            /* if you want shadow inside */
+            box-shadow: inset 10px 13px grey;
+
+            /* if you want multiple shadows */
+            box-shadow: 10px 13px black, 20px 23px grey;
+
+             
+            
+        }
+
+        .card h2{
+            /* same synatx as box-shadow */
+            text-shadow: 4px 4px black;
+            text-shadow: 4px 4px 4px black;
+            /* When to use text shadows? */
+            /* if you have an image and text is not shown, if you give a little text shadow it works */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+           <h2>Card 1</h2> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nisi numquam. Unde, placeat aperiam pariatur qui dicta ratione atque fugit quo vero culpa ipsam consequatur!</p>
+        </div>
+        <div class="card" id="card2">
+           <h2>Card 2</h2> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nisi numquam. Unde, placeat aperiam pariatur qui dicta ratione atque fugit quo vero culpa ipsam consequatur!</p>
+        </div>
+        <div class="card" id="card3">
+           <h2>Card 3</h2> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nisi numquam. Unde, placeat aperiam pariatur qui dicta ratione atque fugit quo vero culpa ipsam consequatur!</p>
+        </div>
+    </div>
+</body>
+</html>

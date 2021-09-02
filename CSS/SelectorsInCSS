@@ -1,0 +1,11 @@
+CSS Selectors are used to find the element whose property will be set 
+
+Selectors are used to target the HTML elements
+
+Selectors make it easy for us to easily target single/multiple HTML elements in the Markup
+
+Types of Selectors:
+1: CSS element Selectors
+2: CSS id Selectors
+3: CSS class Selectors
+4: CSS grouping Selectors 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute, relative, fixed and sticky</title>
+    <style>
+
+        .container{
+            border: 2px solid black;
+            background-color: rosybrown;
+            height: 4000px;
+        }
+
+
+        .box{
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        /* position: static(default position) */
+        #box1{
+            position: sticky;
+            top: 3px;
+        }
+
+        #box2{
+            /* relative to its first parent */
+            position: absolute;
+            top: 34px;
+            left: 34px;
+        }
+
+        #box3{
+            /* relative helps you use top,bottom,right and left property */
+            /* relative to its NORMAL position */
+            /* if you want a gap in the original position you will use relative */
+            position: relative;
+            top: 34px;
+            left: 34px;
+        }
+
+        #box4{
+            /* position related to the browser window */
+            position: fixed;
+            right: 4px;
+            bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="box1">ONE</div>
+    <div class="box" id="box2">TWO</div>
+    <div class="box" id="box3">THREE</div>
+    <div class="box" id="box4">FOUR</div>
+</div>
+</body>
+</html>

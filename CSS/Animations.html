@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key frames and Animations</title>
+    <style>
+        .container{
+            background-color: grey;
+        }
+
+        .box{
+            background-color: rosybrown;
+            color: white;
+            height: 250px;
+            width: 250px;
+            position: relative;
+            /* animation-name: Mansi; */
+            animation-name: Mansi2;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            /* if you want it to have properties of "to" when animation is done use animation-fill-mode: forwards; */
+            /* animation-fill-mode: forwards; */
+
+            /* if you want it to have initial properties use animation-fill-mode: alternate; */
+            animation-fill-mode: alternate;
+
+            /* ease in for slow in the beginning fast towards the end */
+            animation-timing-function: ease-in;
+
+            /* ease out for fast in the beginning and slow towards the end */
+            animation-timing-function: ease-out;
+
+            /* slow in the beginning and end */
+            animation-timing-function: ease-in-out;
+
+            /* if you want the animation to start after a delay */
+            animation-delay: 3s;
+
+            /* to have the animation in reverse direction */
+            /* animation-direction: reverse; */
+
+            /* animation: animation_name animation_duration timing_function delay iteration_count animation_fill_mode; */
+
+            /* shorthand for animation on top */
+
+            animation: Mansi2 5s ease-in-out 3s 12 backwards;
+        }
+
+
+        @keyframes Mansi2 {
+            /* when animation is n% over do the following */
+            0%{
+                top: 0px;
+                left: 0px
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+        @keyframes Mansi{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is a box</div>
+    </div>
+</body>
+</html>

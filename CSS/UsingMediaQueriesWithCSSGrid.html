@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Media Queries With CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 'navBar navBar navBar navBar' 
+            'section section section aside'  
+            'footer footer footer footer';
+        }
+
+        nav{
+            grid-area: navBar;
+        }
+        section{
+            grid-area: section;
+        }
+       aside{
+            grid-area: aside;
+        }
+
+        footer{
+            text-align: center;
+            grid-area: footer;
+        }
+
+         @media only screen and (max-width:300px) {
+        body{
+            background-color: rosybrown;
+        }
+
+        .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 'navBar navBar navBar navBar' 
+            'section section section section'  
+            'aside aside aside aside'  
+            'footer footer footer footer';
+        }
+
+        /* lets say you dont wanna show aside */
+        aside{
+            display: none;
+        }
+
+        span{
+            display: block;
+        }
+    }
+    @media only screen and (max-width:500px) and (min-width:300px){
+        body{
+            background-color: grey;
+        }
+
+        .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 'navBar navBar navBar navBar' 
+            'section section section section'  
+            'aside aside aside aside'  
+            'footer footer footer footer';
+        }
+        span{
+            display: block;
+        }
+    }
+    @media only screen and (max-width:800px) and (min-width:500px){
+        body{
+            background-color: black;
+        }
+    }
+    @media only screen and (min-width:800px){
+        body{
+            background-color: royalblue;
+        }
+    }
+
+    .border-now{
+        border: 2px solid white;
+        padding: 23px;
+        background-color: sandybrown;
+    }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <nav class="border-now">
+           <span>Home </span> 
+           <span>About Us</span> 
+           <span>Contact Us</span> 
+        </nav>
+
+        <section class="border-now">
+            <h4>Learn CSS</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi inventore consequuntur dolores natus placeat libero neque deleniti. Dolorum sequi dolorem natus suscipit? Explicabo, voluptatem architecto, voluptas aliquam officia minima dolores culpa esse itaque dolorum corrupti? Quasi ratione vero consequuntur, delectus molestiae dolores tempora. Dolore dolores esse ut, quis optio delectus iusto. Facilis fugiat nam at debitis optio modi laboriosam sed deserunt, laudantium dicta reiciendis voluptatibus eaque deleniti, ut earum quisquam aspernatur impedit rem natus. Nulla accusamus rem alias, molestiae ipsum adipisci nobis rerum ullam in expedita quod tenetur quasi commodi ab laborum aut eveniet illum quidem cupiditate similique omnis id?</p>
+        </section>
+
+        <aside class="border-now">
+            <h3>More About Us</h3>
+        </aside>
+
+        <footer class="border-now">
+            Copyright &copy; Mansi V Jain
+        </footer>
+    </div>
+</body>
+</html>

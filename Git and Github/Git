@@ -1,0 +1,26 @@
+What is git?
+distributed version controol system for tracking changes in source code during software development,Git is very powerful
+
+Why Git??
+
+i. Git saves your changes
+ii. Records the version and the person who creates that version
+iii. Changes code efficiently
+
+What is github?
+global company that provides hosting by software development using git
+
+Git setup
+git config --global user.name "Mansi V Jain"
+git config --global user.email "mansi.cs20@bmsce.ac.in"
+
+
+On branch master
+nothing to commit, working tree clean
+
+The above lines mean that there's nothing to be committed
+
+
+
+
+

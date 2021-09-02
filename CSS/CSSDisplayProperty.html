@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /* display inline,to take only that much place */
+        /* display block,to take up the whole width */
+        /* header is a block element */
+        /* you cannot set width for inline elements */
+        /* if you want inline and still wanna play with its width, inline-block */
+        header{
+            /* This is not working why? */
+            margin: auto;
+            /* Because display was inline */
+            display: block;
+            margin: auto !important;
+            border: 4px solid black;
+            width: 1200px;
+        }
+        img{
+            display: block;
+            height: 500px;
+            width: 50%;
+            margin: auto;
+        }
+        h3{
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+             margin: 0px; 
+        }
+
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+
+        .box{
+            color: whitesmoke;
+            background-color: rosybrown;
+            border: 2px solid black;
+            margin: 0px;
+            /* To restrict margin and padding from playing with the width */
+            box-sizing: border-box;
+            display: inline-block;
+            width: 33%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- header is a block element -->
+        <header class="top">
+            <img src="Image.jpg" alt="Error Loading Image">
+            <h3>Welcome to my Blog!</h3>
+        </header>
+        <div class="container">
+            <div class="box">
+                <h4 class="heading">Heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, provident. Quas iusto repudiandae, accusantium dolore maxime delectus eaque vel! Aliquid soluta aliquam reiciendis sit quod ut corrupti minus quaerat tempore. Nostrum, eum reprehenderit. Eveniet.</p>
+            </div>
+            <div class="box">
+                <h4 class="heading">Heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, provident. Quas iusto repudiandae, accusantium dolore maxime delectus eaque vel! Aliquid soluta aliquam reiciendis sit quod ut corrupti minus quaerat tempore. Nostrum, eum reprehenderit. Eveniet.</p>
+            </div>
+            <div class="box">
+                <h4 class="heading">Heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, provident. Quas iusto repudiandae, accusantium dolore maxime delectus eaque vel! Aliquid soluta aliquam reiciendis sit quod ut corrupti minus quaerat tempore. Nostrum, eum reprehenderit. Eveniet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

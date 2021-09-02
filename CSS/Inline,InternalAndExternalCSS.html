@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline , Internal and External CSS</title>
+    
+    <!-- External CSS -->
+    <!-- Its not like internal CSS takes precedence over external,its just that between internal and external CSS, whichever appears second in the code,is what gets executed -->
+
+    <!-- If you still want the first one that appears to work, the mark it important like this
+    "background-color: rosybrown !important;"-->
+    <link rel="stylesheet" href="ExternalCSS.css">
+    
+    
+    <!-- Internal CSS -->
+    <style>
+        /* below im trying to overwrite inline CSS but that wont happen, preference will be give to inline CSS */
+        p{
+            color:black;
+        }
+        p{
+            color:whitesmoke;
+            background-color: rosybrown ;
+        }
+    </style>
+</head>
+<body>
+    <h3>Inline , Internal and External CSS</h3>
+    <!-- Inline CSS -->
+    <p style="color: whitesmoke; background-color: rosybrown;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, iure!</p>
+    <p id="AQUAPARA">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, iure!</p>
+</body>
+</html>

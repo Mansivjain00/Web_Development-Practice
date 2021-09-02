@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Pseudo Selectors</title>
+    <style>
+
+        body{
+            /* now we are not able to read content due to background image */
+            /* We could have reduced opacity, but that reduces for everything */
+            /* So what to do?Check background pseudo selector */
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        section{
+            display: flex;
+            flex-direction: column;
+            margin:3px 100px ;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 400px;
+            justify-content: center;
+        }
+        
+        
+        
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            justify-content: space-around;
+        }
+        
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+        
+        header::before{
+            content: "";
+            background: url(Image.jpg) center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* but now content is not visible?,and space is created on top*/
+            z-index: -1;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to Coding World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad mollitia deserunt quibusdam perferendis minima, iusto earum et doloremque quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium architecto accusantium sed debitis voluptatibus, repellendus doloremque doloribus exercitationem eveniet quod quas dolor dignissimos quia quis cum placeat dicta inventore alias.</p>
+    </section>
+    <hr>
+</body>
+</html>

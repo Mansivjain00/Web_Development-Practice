@@ -1,0 +1,9 @@
+-Endless new resolutions and devices are difficult to support separately for a web developer 
+-Responsive design is a way for a web developer to make his website adapt to all devices and resolutions
+-Responsive design is a necessity and not a luxury anymore!
+
+Various ways to achieve responsive designs
+-Setting up the viewport
+-Use max-width/max-height
+-Using CSS Media Queries(When screen gets re-sized, you can inject different CSS  properties)
+-Using rem/vh/vw units over pixels

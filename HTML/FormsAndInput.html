@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Vaccination Details</h2>
+    <!-- action attribute value is where the form details will be sent -->
+    <form action="backend.php">
+        <!-- The name attribute helps backend in realising what kind of input is given -->
+        <!-- Now since Name has label,if i click on name the input box will get selected(id value and for value should match) -->
+        <label for="name"> Name:</label>
+        <div>
+            <!-- required for making sure the field has some input -->
+            <input type="text" name="myName" id="name" required> 
+        </div>
+        <br>
+        <div>
+            <!-- takes in e as an input for exponential values -->
+            Age: <input type="number" name="myAge">
+        </div>
+        <br>
+        <div>
+            E-mail: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Gender:<br>
+            Male <input type="radio" name="myGender"><br>
+            Female <input type="radio" name="myGender"><br>
+            Others <input type="radio" name="myGender"><br>
+        </div>
+        <br>
+        <div>
+            <!-- "checked" is used to have the box checked by default -->
+            Are you eligible to take a Covid-19 vaccine?: <input type="checkbox" name="vaccine?" checked >
+        </div>
+        <br>
+        <div>
+            <label for="vaccinecheck">  Have you taken a Covid-19 vaccine? </label>
+           <input type="checkbox" name="vaccine?" id="vaccinecheck">
+        </div>
+        <br>
+        <div>
+         
+            <label for="typeOfVaccine">   Which Covid-19 vaccine have you taken? </label>
+            <select name="myVaccine" id="typeOfVaccine">
+                <option value="Covaxin">Covaxin</option>
+                <!-- "selected" to select covishield by default -->
+                <option value="Covishield" selected>Covishield</option>
+                <option value="Sputnik">Sputnik</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Date Of Vaccination: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            What is your take on re-opening of colleges? <br> <textarea name="myText" id="" cols="60" rows="10"></textarea>
+        </div>
+        <br>
+        
+        <div>
+            <!-- value attribute consists of the text that will be present in the submit button -->
+            <input type="submit" value="Submit Now">
+                 <!-- to reset the form -->
+                 <input type="reset" value="Reset Now">
+        </div>
+       
+    </form>
+</body>
+</html>

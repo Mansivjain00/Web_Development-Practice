@@ -1,0 +1,24 @@
+CSS takes responsibility of styling raw HTML
+CSS syntax
+
+selector{property:value}
+
+The line below implies that you want all the paragraphs to be blue in colour
+p{colour:blue;}
+
+incase you want only a few paragraphs to be blue, you can assign classes
+incase you want only a one paragraph to be blue, you can assign an Id
+
+you can give a group of selectors too
+
+header, p.intro{
+    background-color:red;
+    border-radius: 3px;
+}
+
+The above properties will be absorbed by all headers and paragraphs who belong to class intro
+
+There are three ways to add CSS to the Markup
+1)Inline CSS: CSS is added to the elements directly using style attribute
+2)Internal CSS: CSS is kept separately inside the head tags in <style> tags
+3)External CSS: CSS is kept separately inside a .css style sheet 

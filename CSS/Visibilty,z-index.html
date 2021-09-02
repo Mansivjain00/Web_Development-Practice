@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and z-index</title>
+    <style>
+        .box{
+            color: white;
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        /* visibilty-visible(default value) */
+
+        #box1{
+            /* visibilty:hidden; to hide the elements, but the position of this element is reserved (empty space shown)*/
+            visibility: hidden;
+            background-color: rosybrown;
+        }
+        #box2{
+            /* display: none; in contrast to visibilty hidden doesnt reserve the place, it just gets disappeared */
+            display: none;
+            background-color: grey;
+        }
+        #box3{
+            /* z-index: for some reason if boxes are one upon each other, then z-index defines which one should be on top */
+            /* z-index only works if your position is anything other than static,i.e relative,absolute,fixed,or sticky */
+            /* the box that has a higher z-index comes first in the overlap */
+            position: relative;
+            top: 14px;
+            z-index: 3px;
+            background-color: darkblue;
+        }
+        #box4{
+            position: relative;
+            top: 1px;
+            z-index: 30px;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- shortcut for id with box, box2,etc---div.box#box$*4 $-1,2,3,4 -->
+    <div class="box" id="box1">ONE</div>
+    <div class="box" id="box2">TWO</div>
+    <div class="box" id="box3">THREE</div>
+    <div class="box" id="box4">FOUR</div>
+</body>
+</html>

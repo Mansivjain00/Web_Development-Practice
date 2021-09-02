@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id's And Classes</title>
+</head>
+<body>
+    <h3>Id's And Classes</h3>
+    <!-- Id is unique, used to identify that particular element -->
+    <!-- Class is NOT unique, lets say you want a red background for 100 elements, you can either define the style for all the elements or give them the same class name and reduce your work  -->
+    <!-- redBG and blackBorder class properties will be absorbed by this division -->
+    <div id="mainBox" class="redBg blackBorder">
+        This is main box
+    </div>
+    <span class="redBg">This is a span</span>
+
+    <!-- Emmet -->
+    <!-- span.className for executing line 22, span#IdName for executing line 23 -->
+    <!-- "." is for class; "#" is for id -->
+    <span class="redBg"></span>
+    <span id="mainSpan"></span>
+    <!-- div.redBg.blackBorder#mainSpan for executing line 25 -->
+    <div class="redBg blackBorder" id="mainSpan"></div>
+
+    <!-- Emmet takes div tag as default,i.e if i type ".redBg" it will execute line 28 -->
+    <div class="redBg"></div>
+
+    <!-- creating multiple elements using emmet -->
+    <!-- span.myClass.myClass1.myClass2.myClass3*2 to print 2 similar elementsn -->
+    <span class="myClass myClass1 myClass2 myClass3">First</span>
+    <span class="myClass myClass1 myClass2 myClass3">Second</span>
+</body>
+</html>

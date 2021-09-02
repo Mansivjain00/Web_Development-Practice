@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <!-- Link below is very important -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <style>
+        /* Web safe fonts are pre-installed fonts */
+        p{
+            /* If "times new roman" is not available then "times" if "times" is not available then "serif" (font stacking) */
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        #firstfont{
+            font-family: 'Zen Loop', cursive;
+            /* px is 1/96th of an inch */
+            font-size: 30px; 
+
+            /* line height is distance between the previous/after texts and this text */
+            /* em is number of times parent,i.e 5em= 5 times parents' font size */
+            line-height: 5em;
+            
+            /* how bold should the text be */
+            font-weight: 1000;
+
+            font-style: italic;
+        }
+
+        /* Web fonts have to be imported */
+    </style>
+</head>
+<body>
+    <h3>CSS Fonts</h3>
+    <p>Lets explore the different fonts</p>
+    <p id="firstfont">Lorem ipsum dolor sit amet where consectetur adipisicing elit. Eligendi, at.</p>
+    <p id="secondfont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aperiam.</p>
+</body>
+</html>
+
+<!-- How did we import 'Zen loop' font -->
+<!-- Googlefonts>select font>copy link to the font and paste in head inside thelink tag> copy name of the font and paste it in the style tag(property:font-family)-->

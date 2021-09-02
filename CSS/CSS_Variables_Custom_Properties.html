@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        /* CSS doesnt throw errors */
+        :root{
+            /* for global variables, define here */
+            --primary-color: grey;
+            --maxw:900px
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            width: var(--maxw);
+            margin: auto;
+        }
+        .box{
+            /* variable syntax= --variable_name: variable_value, if you make changes here, the change will be made everywhere the variable is used */
+            /* scope of the variable is in this selector only */
+            --box-color:rosybrown;
+            /* The one on top was a local variable */
+            /* flex-direction: row wrap; */
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            box-shadow: 10px 10px var(--box-color);
+            color: whitesmoke;
+            border: 10px double black;
+            margin: auto;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+    </div>
+</body>
+</html>
