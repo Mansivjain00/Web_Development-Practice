@@ -1,0 +1,23 @@
+Data Types in JavaScript
+
+JavaScript is Dynamically typed i.e, You dont have to declare the  data type of the variable.
+
+i. Primitive data type(base)
+ii. Reference data type(Derived,Objects)
+
+Primitive Data Types:
+i. String: collection of characters
+ii. Number: numbers
+iii. Boolean: true/false
+iv. null: intentional empty value
+v. undefined: if you dont initialise the variable, undefined is the default value
+vi. symbol: *later
+
+Reference Data Types (HEAP memory allocation)
+i. Arrays
+ii. Functions
+iii. Object literals
+iv. Dates
+
+
+
