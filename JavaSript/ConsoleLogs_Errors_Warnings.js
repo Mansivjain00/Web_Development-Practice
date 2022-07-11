@@ -24,13 +24,15 @@ console.table({name: "mansi", marks: 100});
 console.warn("This is a warning");
 // warning
 
-console.clear();
+// console.clear();
 // to clear all logs from display
 
 // You should ideally always terminate the statements with a semi colon.
 // But JavaScript is a forgiving language
 
 // To log the amount of time your code takes to execute
+
+// console.time('Variable kinda name')
 
 console.time('Time taken');
 console.log(5+5);
