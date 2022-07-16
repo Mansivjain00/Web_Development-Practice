@@ -54,7 +54,7 @@ console.log(typeof(Student_marks));
 function findname() {
     
 }
-console.log(typeof(findName));
+console.log(typeof(findname));
 
 // Dates
 let date=new Date();

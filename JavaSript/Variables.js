@@ -66,6 +66,7 @@ console.log(city);
 const arr1 = [12,22,32,42,52,62];
 arr1.push(100);
 // to add element at the end of the array
+// You can add element to the end but not redeclare and assign variables
 console.log(arr1);
 
 /* 

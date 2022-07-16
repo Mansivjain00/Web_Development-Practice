@@ -17,7 +17,7 @@ console.log(html.length);
 console.log(html.toLowerCase());
 console.log(html.toUpperCase());
 
-// Even after converting value of "html" remains the same
+// *Even after converting value of "html" remains the same*
 
 console.log(html);
 
@@ -70,6 +70,7 @@ console.log(html.slice(0,6));
 
 // Splits the string at every " " and returns an array that contains the parts of the Split string
 console.log(html.split(" "));
+
 
 // Replace function
 

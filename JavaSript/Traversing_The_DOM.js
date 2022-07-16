@@ -56,7 +56,7 @@ console.log(second.childElementCount);
 // for parent node
 console.log(second.firstElementChild.parentNode);
 
-// for next sibling
+// for next sibling (from childNodes)
 console.log(second.firstElementChild.nextSibling);
 
 // for next element sibling

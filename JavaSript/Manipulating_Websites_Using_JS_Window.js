@@ -8,7 +8,7 @@ let a = window;
 
 console.log(a);//displays window object
 
-// we can access alert through window.alert() and normal alert() beacuse window object is normally global in client side JavaScript
+// we can access alert through "window.alert()" and normal "alert()"" beacuse window object is normally global in client side JavaScript
 
 //alert message
 window.alert("HEY!");
@@ -33,11 +33,18 @@ console.log(scrollX);
 console.log(scrollY);
 
 let d=location;
+// location.reload will reload your page
+// locattion.href: will give you theurl of the page
+// location.href='google.com' will lead you to google.com
 console.log(d);
 
 let e=location.toString();
+// converts the location "to String"
 console.log(e);
 
-// history.go(-1); takes you to the previous page
+let f=window.history;
+console.log(f);
 
+// history.go(-1); takes you to the previous page
+// history.go(1) : takes you one step forward
 

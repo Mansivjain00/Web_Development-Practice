@@ -7,7 +7,7 @@ console.log(myvar,typeof(myvar));
 
 let booleanVar = true;
 console.log(booleanVar,typeof(booleanVar));
-// Conersion from boolean to String
+// Conversion from boolean to String
 booleanVar=String(booleanVar);
 console.log(booleanVar,typeof(booleanVar));
 
@@ -36,12 +36,12 @@ let str= "3434";
 console.log(str, typeof(str));
 
 // To convert to number
-// Incase its not possible, it displays "nan: Not a number"
+// Incase its not possible, it displays "NaN: Not a number"
 
 str=Number(str);
 console.log(str, typeof(str));
 
-str=Number(false);
+str=Number(true);
 // This will be considered as one, not an error, and false will print 0
 console.log(str, typeof(str));
 

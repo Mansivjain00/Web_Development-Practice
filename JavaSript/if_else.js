@@ -56,7 +56,7 @@ console.log(age==19?"CAN VOTE":"CANNOT VOTE");
 
 // Switch case
 
-// if break statement is noot given a fall through condition will take place, i.e all the cases after  the true case will execute
+// if break statement is not given a fall through condition will take place, i.e all the cases after the true case will execute
 switch (age) {
     case 19:
         console.log("You can vote")

@@ -31,6 +31,7 @@ console.log(element.innerText);
 let sel=document.querySelector('#para1');
 // returns the first child
 let sel1=document.querySelector('.para');
+// returns the first bold tag
 let sel2=document.querySelector('b');
 console.log(sel);
 console.log(sel1);
@@ -48,10 +49,9 @@ console.log(element1[0]);
 let element2= document.getElementsByTagName('div');
 console.log(element2);
 
-// you cant use forEach for html collection
+// you can't use forEach for html collection
 
 // to print all divs
-
 
 
 Array.from(element2).forEach(element => {
@@ -62,6 +62,6 @@ Array.from(element2).forEach(element => {
 // OR
 
 for(let i=0;i<element2.length;i++){
-    console.log(element2[i]);
     element2[i].style.color = 'green';
+    console.log(element2[i]);
 }

@@ -25,7 +25,7 @@ console.log(add(5,7));
 
 // Assigning function to a variable
 let mygreet = function (a,b) {
-    return a,b;
+    return a+b;
 }
 
 console.log(mygreet(10,5));
@@ -41,7 +41,7 @@ console.log(myobj.game());
 
 arr = ["fruits","vegetables","furniture"];
 
-arr.forEach(function (element,array,index) {
+arr.forEach(function (element,index,array) {
     console.log(element,index);
 });
 
@@ -49,6 +49,7 @@ arr.forEach(function (element,array,index) {
 
 var i=234;//global scope
 console.log(i);
+
 function ui(name) {
     var i=9;//block level scope
     console.log(i);
@@ -57,6 +58,6 @@ function ui(name) {
 
 console.log(ui("Mansi"),i);
 
-// let --> block level scope
+// let , const --> block level scope
 
 // Better to use "let" & "const"
