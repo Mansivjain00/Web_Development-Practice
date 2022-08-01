@@ -43,6 +43,7 @@ const greet4 = name => "Good evening " + name;
 
 console.log(greet4("Mansi"));
 
+// But for two or more parameters you need paranthesis
 const greet5 = (name,ending) => "Good evening " + name+" "+ending;
 
 console.log(greet5("Mansi","Jain"));
